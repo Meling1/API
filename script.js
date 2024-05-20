@@ -32,4 +32,11 @@ request.onload = function (result) {
   console.log(
     `country:${country}|regija:${regija}|temperatura:${temp}|UV index:${uv}`
   );
+
+  document.getElementById("grad").value = grad; // input field pa koristimo value
+
+  document.getElementById("country").textContent = country;
+  document.getElementById("regija").textContent = regija;
+  document.getElementById("uvindex").textContent = uv;
+  document.getElementById("temp").textContent = temp;
 };
